@@ -68,8 +68,8 @@ const cardWrapperStyles = {
   display: "grid",
   gridTemplateColumns: "1fr 1fr 1fr",
   gridTemplateRows: "1fr 1fr",
-  columnGap: "24px",
-  rowGap: "24px",
+  columnGap: "18px",
+  rowGap: "18px",
 };
 
 const wrapperStyles = {

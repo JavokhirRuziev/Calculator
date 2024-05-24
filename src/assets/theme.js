@@ -10,9 +10,9 @@ export let theme = createTheme({
   breakpoints: {
     values: {
       mobile: 0,
-      tablet: 1330,
-      desktop: 1550,
-      monitor: 1750,
+      tablet: 903,
+      desktop: 1131,
+      monitor: 1551,
     },
   },
   palette: {
