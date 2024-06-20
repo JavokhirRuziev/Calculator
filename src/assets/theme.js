@@ -9,29 +9,29 @@ import { createTheme } from "@mui/material/styles";
 export let theme = createTheme({
   breakpoints: {
     values: {
-      mobile: 0,
-      tablet: 903,
-      desktop: 1131,
-      monitor: 1551,
+      sm: 0,
+      md: 903,
+      lg: 1131,
+      xl: 1551,
     },
   },
   palette: {
-    mode: "light",
     primary: {
-      main: "#5FBF77",
-      light: "#3de39e",
-      contrastText: "#fff",
+      main: "#454a4d",
+    },
+    secondary: {
+      main: "#FEA00F",
     },
     info: {
-      main: "#fff",
-      contrastText: "#000",
+      main: "#67675c",
     },
-    grey: {
-      100: "#CFCFE4",
+    warning: {
+      main: "#fcd79d",
     },
   },
+
   typography: {
-    fontFamily: `"NunitoRegular", sans-serif`,
+    fontFamily: `"NunitoBold", sans-serif`,
   },
   shadows: ["none", "0px 10px 13px -4px #23235F30"],
   components: {
@@ -40,6 +40,19 @@ export let theme = createTheme({
         disableGutters: true,
         fixed: true,
         maxWidth: "xl",
+      },
+    },
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          textTransform: "none",
+          fontFamily: `"NunitoBold", sans-serif`,
+          fontWeight: "bold",
+          fontSize: "18px",
+          padding: "10px",
+          borderRadius: 0,
+          border: "0.5px solid black",
+        },
       },
     },
   },

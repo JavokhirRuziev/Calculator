@@ -7,6 +7,7 @@ import { ThemeProvider } from "@mui/material";
 import { theme } from "./assets/theme";
 import "./assets/fonts/stylesheet.css";
 import { BrowserRouter } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -15,6 +16,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <ThemeProvider theme={theme}>
+        <ToastContainer />
         <App />
       </ThemeProvider>
     </BrowserRouter>
